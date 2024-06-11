@@ -4,6 +4,7 @@ struct AddProfilePhotoScreen: View {
     @State private var selectedTag = 0
     @State private var isTrue: Bool = false
     
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -46,6 +47,7 @@ struct AddProfilePhotoScreen: View {
                 CompletionScreen()
             }
         }
+        .navigationBarHidden(true)
     }
 }
 

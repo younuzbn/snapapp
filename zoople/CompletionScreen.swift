@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CompletionScreen: View {
+    @State private var isSuccess = false
     var body: some View {
         NavigationStack{
             Spacer()
@@ -20,7 +21,14 @@ struct CompletionScreen: View {
             .font(.system(size: 24, weight: .bold))
             .multilineTextAlignment(.center)
             Spacer()
-                
+                .onAppear{
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    isSuccess = true
+                    }
+                }
+                .navigationDestination(isPresented: $isSuccess) {
+                    LandingPage()
+                }
         }
         .navigationBarHidden(true)
     }

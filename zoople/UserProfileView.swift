@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct UserProfileView: View {
+    var id = String()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text("User Profile")
+                    .font(.largeTitle)
+            }
+            .frame(maxHeight: .infinity)
+            .background(.red)
+           
+        }
     }
 }
 

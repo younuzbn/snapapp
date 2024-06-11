@@ -25,7 +25,7 @@ struct ContentView: View {
                 }
                 .background(Color.purple)
                 .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         showLoginScreen = true
                     }
                 }

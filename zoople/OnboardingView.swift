@@ -9,7 +9,8 @@ import SwiftUI
 
 struct OnboardView: View {
    
-   
+   @State private var pickerIsPresented = false
+    @State private var image = UIImage()
     var body: some View {
         VStack(spacing: 20) {
 //            Image(systemName: systemImageName)
@@ -29,9 +30,20 @@ struct OnboardView: View {
                             .foregroundStyle(.textClr)
                             .font(.system(size: 24, weight: .bold))
                         Spacer()
-                        Image("pro_pic")
-                            .resizable()
-                            .frame(width: 280, height: 280)
+            Button {
+                pickerIsPresented.toggle()
+            } label: {
+                
+                
+                
+                Image(uiImage: image)
+                    .resizable()
+                    .clipShape(Circle())
+                    .frame(width: 280, height: 280)
+            }
+            .sheet(isPresented: $pickerIsPresented) {
+                ImagePicker(sourceType: .photoLibrary, selectedImage: $image)
+            }
                         Text("Name of User")
                             .foregroundStyle(.textClr)
                             .font(.system(size: 20, weight: .bold))

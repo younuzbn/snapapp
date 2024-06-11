@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D52DFD5F2C040B4D000E6B22 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52DFD5E2C040B4D000E6B22 /* LandingPage.swift */; };
+		D52DFD612C040B94000E6B22 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52DFD602C040B94000E6B22 /* HomeView.swift */; };
+		D52DFD632C040C53000E6B22 /* YourDownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52DFD622C040C53000E6B22 /* YourDownloadsView.swift */; };
+		D52DFD652C040CC2000E6B22 /* YourUploadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52DFD642C040CC2000E6B22 /* YourUploadsView.swift */; };
+		D52DFD672C040D1F000E6B22 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52DFD662C040D1F000E6B22 /* UserListView.swift */; };
+		D52DFD692C040D5D000E6B22 /* UserList1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52DFD682C040D5D000E6B22 /* UserList1View.swift */; };
+		D52DFD6B2C040D99000E6B22 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52DFD6A2C040D99000E6B22 /* UserProfileView.swift */; };
+		D52DFD6D2C040DF8000E6B22 /* SearchPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52DFD6C2C040DF8000E6B22 /* SearchPageView.swift */; };
+		D52DFD712C06FD1A000E6B22 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52DFD702C06FD1A000E6B22 /* StoryModel.swift */; };
 		D598A8142BFCBD46004DAF3E /* Poppins in Resources */ = {isa = PBXBuildFile; fileRef = D598A8132BFCBD46004DAF3E /* Poppins */; };
+		D59C0D842C034BD200014B28 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59C0D832C034BD200014B28 /* AuthViewModel.swift */; };
 		D5A70DDC2BFCB5D600AEFF7E /* zoopleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A70DDB2BFCB5D600AEFF7E /* zoopleApp.swift */; };
 		D5A70DDE2BFCB5D600AEFF7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A70DDD2BFCB5D600AEFF7E /* ContentView.swift */; };
 		D5A70DE02BFCB5D700AEFF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A70DDF2BFCB5D700AEFF7E /* Assets.xcassets */; };
@@ -24,10 +34,21 @@
 		D5CD2C3B2BFE197400E66235 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D5CD2C3A2BFE197400E66235 /* FirebaseFirestore */; };
 		D5CD2C3D2BFE197400E66235 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5CD2C3C2BFE197400E66235 /* FirebaseFirestoreSwift */; };
 		D5CD2C3F2BFE197400E66235 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = D5CD2C3E2BFE197400E66235 /* FirebaseMessaging */; };
+		D5E1B5732C17143A0046F84E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E1B5722C17143A0046F84E /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D52DFD5E2C040B4D000E6B22 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		D52DFD602C040B94000E6B22 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D52DFD622C040C53000E6B22 /* YourDownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourDownloadsView.swift; sourceTree = "<group>"; };
+		D52DFD642C040CC2000E6B22 /* YourUploadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourUploadsView.swift; sourceTree = "<group>"; };
+		D52DFD662C040D1F000E6B22 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		D52DFD682C040D5D000E6B22 /* UserList1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList1View.swift; sourceTree = "<group>"; };
+		D52DFD6A2C040D99000E6B22 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		D52DFD6C2C040DF8000E6B22 /* SearchPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageView.swift; sourceTree = "<group>"; };
+		D52DFD702C06FD1A000E6B22 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		D598A8132BFCBD46004DAF3E /* Poppins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Poppins; sourceTree = "<group>"; };
+		D59C0D832C034BD200014B28 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D5A70DD82BFCB5D600AEFF7E /* zoople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zoople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A70DDB2BFCB5D600AEFF7E /* zoopleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zoopleApp.swift; sourceTree = "<group>"; };
 		D5A70DDD2BFCB5D600AEFF7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +62,7 @@
 		D5CD2C292BFDF0BC00E66235 /* CompletionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionScreen.swift; sourceTree = "<group>"; };
 		D5CD2C332BFE0A1B00E66235 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		D5CD2C352BFE187800E66235 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5E1B5722C17143A0046F84E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +101,7 @@
 			children = (
 				D5A70DDB2BFCB5D600AEFF7E /* zoopleApp.swift */,
 				D5A70DDD2BFCB5D600AEFF7E /* ContentView.swift */,
+				D5E1B5722C17143A0046F84E /* ImagePicker.swift */,
 				D5A70DE92BFCBB6B00AEFF7E /* LoginScreen.swift */,
 				D5CD2C1F2BFDD9E700E66235 /* Registrationscreen.swift */,
 				D5CD2C212BFDDBE700E66235 /* AddProfilePhotoScreen.swift */,
@@ -86,10 +109,20 @@
 				D5CD2C252BFDE58000E66235 /* SelectAgeScreen.swift */,
 				D5CD2C272BFDE98F00E66235 /* AddInterests.swift */,
 				D5CD2C292BFDF0BC00E66235 /* CompletionScreen.swift */,
+				D52DFD5E2C040B4D000E6B22 /* LandingPage.swift */,
+				D59C0D832C034BD200014B28 /* AuthViewModel.swift */,
+				D52DFD702C06FD1A000E6B22 /* StoryModel.swift */,
 				D5A70DDF2BFCB5D700AEFF7E /* Assets.xcassets */,
 				D5CD2C352BFE187800E66235 /* GoogleService-Info.plist */,
 				D598A8132BFCBD46004DAF3E /* Poppins */,
 				D5A70DE12BFCB5D700AEFF7E /* Preview Content */,
+				D52DFD602C040B94000E6B22 /* HomeView.swift */,
+				D52DFD622C040C53000E6B22 /* YourDownloadsView.swift */,
+				D52DFD642C040CC2000E6B22 /* YourUploadsView.swift */,
+				D52DFD662C040D1F000E6B22 /* UserListView.swift */,
+				D52DFD682C040D5D000E6B22 /* UserList1View.swift */,
+				D52DFD6A2C040D99000E6B22 /* UserProfileView.swift */,
+				D52DFD6C2C040DF8000E6B22 /* SearchPageView.swift */,
 			);
 			path = zoople;
 			sourceTree = "<group>";
@@ -183,14 +216,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59C0D842C034BD200014B28 /* AuthViewModel.swift in Sources */,
+				D52DFD672C040D1F000E6B22 /* UserListView.swift in Sources */,
 				D5A70DDE2BFCB5D600AEFF7E /* ContentView.swift in Sources */,
 				D5CD2C262BFDE58000E66235 /* SelectAgeScreen.swift in Sources */,
 				D5CD2C222BFDDBE700E66235 /* AddProfilePhotoScreen.swift in Sources */,
+				D52DFD692C040D5D000E6B22 /* UserList1View.swift in Sources */,
+				D52DFD632C040C53000E6B22 /* YourDownloadsView.swift in Sources */,
+				D52DFD6D2C040DF8000E6B22 /* SearchPageView.swift in Sources */,
 				D5CD2C342BFE0A1B00E66235 /* OnboardingView.swift in Sources */,
 				D5CD2C2A2BFDF0BC00E66235 /* CompletionScreen.swift in Sources */,
 				D5CD2C282BFDE98F00E66235 /* AddInterests.swift in Sources */,
+				D52DFD712C06FD1A000E6B22 /* StoryModel.swift in Sources */,
+				D52DFD6B2C040D99000E6B22 /* UserProfileView.swift in Sources */,
+				D52DFD5F2C040B4D000E6B22 /* LandingPage.swift in Sources */,
 				D5A70DDC2BFCB5D600AEFF7E /* zoopleApp.swift in Sources */,
+				D52DFD612C040B94000E6B22 /* HomeView.swift in Sources */,
 				D5CD2C202BFDD9E700E66235 /* Registrationscreen.swift in Sources */,
+				D5E1B5732C17143A0046F84E /* ImagePicker.swift in Sources */,
+				D52DFD652C040CC2000E6B22 /* YourUploadsView.swift in Sources */,
 				D5A70DEA2BFCBB6B00AEFF7E /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,4 +1,5 @@
 import SwiftUI
+import Firebase
 
 struct Registrationscreen: View {
     @State private var name = ""
@@ -10,8 +11,9 @@ struct Registrationscreen: View {
     @State private var isPasswordValid = true
     @State private var showAlert = false
     @State private var alertMessage = ""
+    @State private var isTrue = false
+    @State private var isLoggedIn = false
     @FocusState private var focusedField: Field?
-
     @Environment(\.dismiss) var dismiss
 
     enum Field: Hashable {
@@ -169,6 +171,7 @@ struct Registrationscreen: View {
                     .cornerRadius(10)
                     .alert(isPresented: $showAlert) {
                         Alert(title: Text("Alert"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                            
                     }
                     
                     Text("- Or Sign in with -")
@@ -202,11 +205,17 @@ struct Registrationscreen: View {
                 .padding(.horizontal, 30)
                 .background(Color.white)
             }
+            .navigationDestination(isPresented: $isTrue) {
+                LoginScreen()
+            }
+            .navigationDestination(isPresented: $isLoggedIn) {
+                AddProfilePhotoScreen()
+            }
         }
         .navigationBarHidden(true)
     }
     
-    // Sign-Up action
+ 
     func signUpAction() {
         if name.isEmpty || email.isEmpty || password.isEmpty || verifyPassword.isEmpty {
             alertMessage = "Please fill in all fields."
@@ -217,23 +226,43 @@ struct Registrationscreen: View {
         } else if password != verifyPassword {
             alertMessage = "Passwords do not match."
         } else {
+            register()
             alertMessage = "Registration successful."
+          isLoggedIn = true
+
+            clearFields()
         }
         showAlert = true
     }
+        
+    func clearFields() {
+        name = ""
+        email = ""
+        password = ""
+        verifyPassword = ""
+    }
+
     
-    // Email validation function
+
     func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
     
-    // Password validation function
+
     func isValidPassword(_ password: String) -> Bool {
         let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,}$"
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
         return passwordTest.evaluate(with: password)
+    }
+    
+    
+    func register() {
+        Auth.auth().createUser(withEmail: email, password: password) { Result, error in if error != nil {
+                print(error!.localizedDescription)
+            }
+        }
     }
 }
 
